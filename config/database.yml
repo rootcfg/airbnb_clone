@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: 192.168.56.101
+  port: 5432
+  username: rails
+  password: kara4un696
+
+development:
+  <<: *default
+  database: airbnb_development
+
+test:
+  <<: *default
+  database: airbnb_test
+
+production:
+  <<: *default
+  database: airbnb_production
+  username: airbnb
+  password: <%= ENV["AIRBNB_DATABASE_PASSWORD"] %>

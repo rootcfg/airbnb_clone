@@ -1,0 +1,31 @@
+<div class="bg-white">
+  <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+
+      <% 100.times do %>
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 ">
+            <img src="https://a0.muscache.com/im/pictures/9d007f60-de49-4dcf-986f-5f15debf391b.jpg?im_w=1200" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-2">
+            <div class="flex justify-between">
+              <h3 class="text-medium font-semibold text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Far far away.
+                </a>
+              </h3>
+              <span class="flex items-center text-sm font-light text-gray-700">
+                <%= render('shared/star_bold') %>4.8
+              </span>
+            </div>
+              <p class="mt-0.5 text-sm text-gray-500">Hosted by Tom Crouse</p>
+              <p class="mt-0.5 text-sm text-gray-500">20 - 25 Jan</p>
+              <p class="mt-0.5 text-sm font-light text-gray-500"><span class="font-medium">$110 </span>night</p>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
